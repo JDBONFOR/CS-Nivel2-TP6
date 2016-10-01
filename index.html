@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>CoderHouse N2 - Clase 6</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Clase 6 - JQuery</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <p>
+        Crear un formulario de alta de productos<br>
+        Debera ir generando una lista, con su imagen, nombre, descripcion y categoria<br>
+        Acciones:<br>
+        un boton para poder ingresar elementos al principio o al final<br>
+        un boton que recorra la tabla y le ponga una clase a las filas pares y otra a las filas impares<br>
+        un boton para resetear la tabla (tbody)<br>
+        Estilos: <br>
+        Los productos deberan tener distintas categorias, las cuales repersentaran distintos backgrounds<br>
+        Todos los elementos dentro del thead deben ser bold<br>
+      </p>
+
+
+        <h2>Cargue el producto</h2>
+        <div class="form-group">
+          <input id="productName" type="text" class="form-control" value="" placeholder="Indique el nombre del producto">
+        </div>
+        <div class="form-group">
+          <input id="productDescription" type="text" class="form-control" value="" placeholder="Indique la descripción del producto">
+        </div>
+        <select id="productCategory" class="form-control" name="productCategory">
+          <option value="Electronica">Electrónica</option>
+          <option value="Hogar">Hogar</option>
+          <option value="Jardin">Jardinería</option>
+        </select>
+        <section class="productMenu">
+          <button id="btnAddFirst" type="submit" class="btn btn-primary" name="button">Agregar al Principio</button>
+          <button id="btnAddLast" type="submit" class="btn btn-danger" name="button">Agregar al Final</button>
+          <button id="btnAddColorPair" type="submit" class="btn btn-warning" name="button">Color pares</button>
+          <button id="btnAddColorNoPair" type="submit" class="btn btn-info" name="button">Color impares</button>
+          <button id="btnRemove" type="submit" class="btn btn-default" name="button">Limpiar Lista</button>
+        </section>
+
+    </div>
+
+    <div class="products">
+      <div class="container">
+        <ul id="items-1">
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Add Jquery -->
+    <script type="text/javascript" src="js/jquery-3.1.0.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
